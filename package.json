@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "bundle": "browserify client/index.js -t babelify -o server/public/bundle.js",
-    "bundle:watch": "watchify client/index.js -vd -t babelify -o server/public/bundle.js",
+    "bundle":
+      "browserify client/index.js -t babelify -o server/public/bundle.js",
+    "bundle:watch":
+      "watchify client/index.js -vd -t babelify -o server/public/bundle.js",
     "start": "nodemon server/app.js",
     "watch": "npm-run-all --parallel start bundle:watch"
   },
